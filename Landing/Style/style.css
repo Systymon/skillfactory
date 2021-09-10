@@ -852,10 +852,38 @@ hr{
     color: #FFFFFF;
 }
 .services_form{
-    justify-content: start;
+    margin-top: 39px;
     display: grid;   
 }
 .services_form-label{
+    margin-bottom: 48px;
     display: grid;
-    justify-content: start;
+}
+.services_form-label-title{
+    margin-left: 0px;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.services_input-name{
+    width: 408px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+}
+.services_input-name::placeholder{
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.services_input-phone{
+    width: 408px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+}
+.services_input-phone::placeholder{
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
 }
