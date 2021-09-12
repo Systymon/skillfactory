@@ -6,7 +6,6 @@ body{
     margin: 0 auto;
 }
 a{
-    display: inline-flex;
     text-decoration: none;
 }
 li{
@@ -38,6 +37,19 @@ li{
 }
 h1{
     margin: 0;
+}
+.input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+input::placeholder{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
 }
 
 /*---------HEADER---------*/
@@ -395,7 +407,6 @@ h1{
 
 .online_control{
     margin-top: -324px;
-    /*z-index: 2;*/
 }
 @media screen and (max-width: 768px){
     .online_control{
@@ -731,6 +742,7 @@ hr{
 }
 .examples_of_repair{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 31px;
 }
 .examples_of_repair-item{
@@ -880,10 +892,184 @@ hr{
     width: 408px;
     background: transparent;
     border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 .services_input-phone::placeholder{
     font-size: 14px;
     line-height: 23px;
     color: #FFFFFF;
+}
+.services_input-email{
+    width: 408px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.services_input-email::placeholder{
+    color: #FFFFFF;
+}
+.services_checkbox-text{
+    font-size: 14px;
+    line-height: 163.68%;
+    color: #FFFFFF;
+    margin-left: 8px;
+}
+.services_form-label-checkbox{
+    margin-left: 0px;
+    margin-top: -32px;
+    display: flex;
+    align-items: center;
+}
+.services_form-button{
+    margin-top: 39px;
+    margin-right: 0px;
+    width: 213px;
+    height: 51px;
+}
+.save{
+    display: flex;
+    margin-top: 65px;
+    margin-left: 0px;
+    align-items: center;
+}
+.save_image{
+    margin-left: 0px;
+    margin-right: 25px;
+}
+.svae_text{
+    margin-left: 0px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+/*---------TYPES OF REPAIR mobile---------*/
+
+@media screen and (max-width: 768px){
+    .types_of_repair-container{
+        max-width: 339px;
+        margin: 0 auto;
+    }
+    .types_of_repair-title{
+        font-size: 22px;
+        line-height: 138.6%;
+    }
+    .examples_of_repair-item{
+        margin-bottom: 60px;
+    }
+    .repair_description{
+        margin-left: 0px;
+    }
+    .repair_description-title{
+        font-size: 15px;
+        line-height: 138.6%;
+    }
+    .repair_description-list-item{
+        font-size: 13px;
+        line-height: 169.8%;
+    }
+    .services{
+        display: none;
+    }
+}
+
+/*---------FANTASY GALERY---------*/
+
+.fantasy_gallery{
+    margin-top: 240px;
+    background-image: url("../image/fantasy_background.jpg");
+    width: 100%;
+    height: 864px;
+}
+.fantasy_gallery-background{
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+    height: 864px;
+    width: 100%;
+}
+.fantasy_gallery-container{
+    max-width: 1260px;
+    margin: 0 auto;
+    display: flex;
+}
+.fantasy_gallery_content{
+    margin-top: 105px;
+    margin-left: 0px;
+}
+.fantasy_gallery-title{
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+.fantasy_gallery_list{
+    padding-left: 0px;
+    margin-top: 47px;
+}
+.fantasy_gallery_list-item{
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+.gallery_list-link{
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+.gallery_list-link:hover{
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+.fantasy_gallery_image-content{
+    display: flex;
+    margin-right: 0px;   
+}
+.gallery_image-column-one{
+    margin-top: -40px;
+    margin-right: 43px;
+}
+.fantasy_gallery_image{
+    margin-bottom: 40px;
+}
+.gallery_image-column-two{
+    margin-top: -112px;
+}
+.fantasy_gallery-mobile{
+    display: none;
+}
+
+/*---------FANTASY GALERY mobile---------*/
+
+@media screen and (max-width: 768px){
+    .fantasy_gallery{
+        display: none;
+    }
+    .fantasy_gallery-mobile{
+        display: block;
+        max-width: 339px;
+        height: 332px;
+    }
+    .fantasy_gallery-title-mobile{
+        font-size: 22px;
+        line-height: 138.6%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #E3B873;
+    }
+    .fantasy_gallery_image-mobile{
+        margin-top: 24px;
+        background-image: url("../image/fantasy_background.jpg");
+        background-size: 340px 242px;
+        width: 340px;
+        height: 242px;
+        display: flex;
+        align-items: center;
+    }
+    .galery_arows-media{
+        display: flex;
+        width: 340px;  
+    }
+    .galery_arows-left_media{
+        margin-left: 14px; 
+    }
+    .galery_arows-right_media{
+        margin-right: 14px;
+    }
 }
