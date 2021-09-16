@@ -1073,3 +1073,130 @@ hr{
         margin-right: 14px;
     }
 }
+
+/*---------REVIEWS---------*/
+
+.reviews{
+    margin-top: 110px;
+}
+.revievs_container{
+    max-width: 1260px;
+}
+.reviews_header-title{
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+}
+.reviews_header-image{
+    background-image: url("../svg/Group43.svg");
+    height: 28px;
+    width: 33px;
+    margin-top: 13px;    
+}
+.reviews_header-image:before{
+    content: '';
+    display: block;
+    height: 1px;
+    background: #E3B873;
+    border-radius: 30px;
+    position: relative;
+    right: 40px;
+    top: 50%;
+}
+.reviews_header-image::after{
+    content: '';
+    display: block;
+    height: 1px;
+    background: #E3B873;
+    border-radius: 30px;
+    position: relative;
+    left: 40px;
+    top: 50%;
+}
+.reviews_header-text{
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #363636;
+}
+.reviews_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.review_client-background{
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-right: 31px;
+    width: 376px;
+    height: 428px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+.client_header{
+    display: flex;
+    align-items: center;
+}
+.review_client-photo{
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+}
+.review_client-name{
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+    text-transform: unset;
+    margin-left: 23px;
+}
+.review_client-text{
+    margin-top: 22px;
+    font-size: 13px;
+    line-height: 180%;
+    color: #959595;
+}
+.client_object{
+    margin-top: -27px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    background: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    width: 294px;
+    height: 54px;
+}
+.object_size{
+    display: flex;
+    align-items: center;
+}
+.object_size-image{
+    margin-right: 16px;
+}
+.client_object-text{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.vertical_line{
+    width: 1px;
+    height: 54px;
+    background: white;
+}
+.object_days{
+    display: flex;
+    align-items: center;
+}
+.object_days-image{
+    margin-right: 16px;
+}
+@media screen and (max-width: 768px){
+    .reviews{
+        display: none;
+    }
+}
